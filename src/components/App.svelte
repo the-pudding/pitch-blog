@@ -24,9 +24,12 @@
   import { onMount } from "svelte";
   import { LayerCake, Svg } from "layercake";
   import Child from "./Child.svelte";
+  import Intro from "./Intro.svelte";
+
   import Scatter from "./Scatter.svelte";
   import petData from "../data/pets.csv";
   import user from "tabler-icons/icons/user.svg";
+  import doc from "../data/copy.json"
 
   let name = "Loading";
 
@@ -34,12 +37,13 @@
   const r = 6;
   const padding = { top: r * 2, right: r * 2, bottom: r * 2, left: r * 2 };
 
+
   onMount(() => (name = "User"));
 </script>
 
-<div>
-  {@html user}
-</div>
+{#each doc.intro as intro}
+  <p class='prose'>{intro.value}</p>
+{/each}
 
 <h1>Hello {name}!</h1>
 
