@@ -1,6 +1,94 @@
-<style global src="./../styles/reset.styl">
-</style>
+<style>
 
+  body {
+    padding-top: 3rem;
+    color: black;
+    font-weight: 500;
+    font-family: 'Lyon Text Web';
+    font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+  a {
+    border-bottom: 1px solid black;
+    text-decoration: none;
+  }
+
+  @font-face {
+  	font-family: 'Lyon Display Web';
+  	src: url('./../assets/fonts/lyon/LyonDisplay-Regular-Web.woff2') format('woff2'),
+  	url('./../assets/fonts/lyon/LyonDisplay-Regular-Web.woff') format('woff');
+  	font-weight: 300;
+  	font-style: normal;
+  	font-stretch: normal;
+  	font-display: swap;
+  }
+  @font-face {
+  	font-family: 'Lyon Text Web';
+  	src: url('./../assets/fonts/lyon/LyonText-Regular-Web.woff2') format('woff2'),
+  	url('./../assets/fonts/lyon/LyonText-Regular-Web.woff') format('woff');
+  	font-weight: 300;
+  	font-style: normal;
+  	font-stretch: normal;
+  	font-display: swap;
+  }
+
+  p {
+    text-align: left;
+    font-family: 'Lyon Text Web';
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.8);
+
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-family: 'Lyon Display Web', sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Walter Turncoat', sans-serif;
+
+
+  }
+
+
+
+  svg {
+    display: block;
+    width: 10rem;
+  }
+
+  strong {
+    color: var(--c2);
+  }
+
+  .intro {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 20rem;
+    display: block;
+  }
+
+  .chart {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    background: pink;
+  }
+
+
+
+
+</style>
 
 <script>
   import { onMount } from "svelte";
@@ -28,4 +116,32 @@
   <Meta />
 </svelte:head>
 
-<Intro />
+<h3>{doc.hed}</h3>
+<h1>{doc.dek}</h1>
+
+<main id="main">
+  <div class="intro">
+    {#each doc.intro as intro}
+      <p class='prose'>{@html intro.value}</p>
+    {/each}
+  </div>
+</main>
+
+
+{#each petData as { name, pet }}
+  <p>
+    {name} has
+    <strong>{pet}.</strong>
+  </p>
+{/each}
+
+<img alt="smokey" src="assets/smokey.jpg" />
+<Child />
+
+<div class="chart">
+  <LayerCake data="{points}" x="x" y="y" {padding}>
+    <Svg>
+      <Scatter {r} />
+    </Svg>
+  </LayerCake>
+</div>
