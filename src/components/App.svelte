@@ -112,20 +112,7 @@
   onMount(() => (name = "User"));
 </script>
 
-<svelte:head>
-  <Meta />
-</svelte:head>
 
-<h3>{doc.hed}</h3>
-<h1>{doc.dek}</h1>
-
-<main id="main">
-  <div class="intro">
-    {#each doc.intro as intro}
-      <p class='prose'>{@html intro.value}</p>
-    {/each}
-  </div>
-</main>
 
 
 {#each petData as { name, pet }}
