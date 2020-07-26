@@ -1,0 +1,139 @@
+
+
+@require './../styles/variables'
+@require './../styles/helpers'
+@require './../styles/reset'
+@require './../styles/layout'
+
+#alt-footer
+  border-top none
+  #wordmark
+    display none
+  .footer-company__description
+    font-size 24px
+  .footer-company__trademark
+    margin-top 1.5rem
+
+.pre-footer
+  display block
+  font-family $lyon
+  padding-top 2rem
+  padding-bottom 3rem
+  p
+    font-family $lyon
+    margin 0 auto
+    color #000
+    font-size 18px
+    width 95%
+    text-align center
+  .socials
+    margin-top 5rem
+  .newsletter-cta
+    form
+      display flex
+      margin 0 auto
+      justify-content center
+
+      margin-top 2rem
+      margin-bottom 2rem
+      width 95%
+      .newsletter__input
+        background rgba(255,255,255,.53)
+        border 1px solid rgba(0,0,0,.25)
+        border-radius 3px
+        margin-right 5px
+        padding-left .5rem
+        font-family $atlas
+        -webkit-appearance none
+        -moz-appearance none
+        font-size 14px
+        &::placeholder
+          font-family $atlas
+          font-size 14px
+
+      .btn
+        border 1px solid #4365BE
+        background-color #5977E1
+        color white
+        border-radius 3px
+        font-size 16px
+        font-weight 600
+        padding .5rem 1rem
+        cursor pointer
+        font-family $atlas
+        box-shadow 0 1px 2px rgba(15,15,15,.15)
+        -webkit-appearance none
+        -moz-appearance none
+
+
+  .patreon-cta
+    padding-top 4rem
+    &:before
+      border-top 1px solid black
+      content ''
+      position absolute
+      top 0px
+      width 100px
+      left 0
+      right 0
+      margin 0 auto
+    display flex
+    flex-direction column
+    margin-bottom 3rem
+    position relative
+    a
+      color white
+      border none
+      font-family $atlas
+      font-size 16px
+      font-weight 600
+      margin 0 auto
+      display block
+
+
+    button
+      margin 0 auto
+      box-shadow 0 2px 2px rgba(225, 98, 89, 0.36)
+      background-color #E16259
+      border 1px solid #BE5643
+      border-radius 3px
+      padding .5rem 1rem
+      display inline-block
+      font-family $atlas
+      align-self center
+      margin-top 2rem
+      margin-bottom 2rem
+      font-weight 600
+      color white
+
+footer.pudding-footer
+	padding 0 1rem
+	border-top 4px solid $black
+	font-family $lyon
+	margin-top 3rem
+	padding-bottom 3rem
+
+	.footer-recirc
+		max-width 65rem
+		margin 0 auto
+		p
+			text-align center
+			font-size 18px
+      color #000
+		.footer-recirc__articles
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+			margin-top 3rem
+
+		.footer-recirc__article
+			display block
+			width 100%
+			border none
+			margin-bottom 2rem
+      color #000
+			+mq('bp-800')
+				width calc(25% - 1.5rem)
+				margin-right 1.5rem
+				&:last-of-type
+					margin-right 0

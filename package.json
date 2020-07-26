@@ -5,8 +5,9 @@
     "node": "12.6.1"
   },
   "dependencies": {
-    "tabler-icons": "^1.10.0",
-    "stylus": "^0.54.7"
+    "d3": "^5.16.0",
+    "stylus": "^0.54.7",
+    "tabler-icons": "^1.10.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^13.0.0",
