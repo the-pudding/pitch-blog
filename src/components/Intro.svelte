@@ -67,7 +67,7 @@
   }
 
   .intro {
-    max-width: 500px;
+    max-width: 40rem;
     margin: 0 auto;
   }
 
@@ -78,6 +78,7 @@
     width: 95%;
     margin: 0 auto;
     margin-bottom: 1.5rem;
+    max-width: 60rem;
   }
 
   .byline p{
