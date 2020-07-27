@@ -107,6 +107,13 @@
 
 <script>
   import doc from "../data/copy.json"
+  import { onMount } from 'svelte';
+  import * as d3 from "d3";
+
+  onMount(() => {
+    d3.selectAll("a").attr("target","_blank");
+  });
+
 </script>
 
 <p class="logo-wrapper">A project from the <a target="_blank" class="text-underline" href="/">The Pudding</a></p>
