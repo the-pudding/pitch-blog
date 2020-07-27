@@ -72,26 +72,33 @@
   }
 
   function recircHTML() {
-  const url = window.location.href;
-  const html = storyData
-    .filter(d => !url.includes(d.url))
-    .slice(0, 4)
-    .map(createLink)
-    .join("");
+    const url = window.location.href;
+    const html = storyData
+      .filter(d => !url.includes(d.url))
+      .slice(0, 4)
+      .map(createLink)
+      .join("");
 
-  d3.select(".pudding-footer .footer-recirc__articles").html(html);
+    d3.select(".pudding-footer .footer-recirc__articles").html(html);
 
   }
   //
-  function init() {
-  loadStories(data => {
-    storyData = data;
-
-    recircHTML();
-  });
-  }
+  // function init() {
+  // loadStories(data => {
+  //   storyData = data;
   //
-  init();
+  //   recircHTML();
+  // });
+  // }
+
+  onMount(() => {
+		loadStories(data => {
+			storyData = data;
+			recircHTML();
+		});
+	});
+  //
+  // init();
 
 </script>
 
