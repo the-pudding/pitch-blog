@@ -23,11 +23,11 @@
   h3, h1 {
     font-family: 'Lyon Text Web';
     text-align: center;
-
   }
 
   h3 {
     width: 95%;
+    margin: 0 auto;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
