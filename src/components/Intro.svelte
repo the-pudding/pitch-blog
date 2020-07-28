@@ -110,8 +110,20 @@
   import { onMount } from 'svelte';
   import * as d3 from "d3";
 
+  let annotations = ["#annotation1","#annotation1return", "#annotation2","#annotation2return","#annotation3","#annotation3return","#annotation4","#annotation4return","#annotation5","#annotation5return"]
+
   onMount(() => {
-    d3.selectAll("a").attr("target","_blank");
+    d3.selectAll("a").attr("target",function(d){
+      if(annotations.indexOf(d3.select(this).attr("href")) > -1 ){
+        if(d3.select(this).attr("href").slice(-6) != "return"){
+          d3.select(this).attr("id",d3.select(this).attr("href")+"return");
+          d3.select(this).attr("name",d3.select(this).attr("href").replace("#","")+"return");
+        }
+
+        return null;
+      }
+      return "_blank";
+    });
   });
 
 </script>
@@ -133,4 +145,16 @@
       <li class='prose bullet'>{@html outro.value}</li>
     {/each}
   </ul>
+  <div class="footnotes">
+    <div class="item"><a style="border: none;" name="annotation1">1.</a> We pay $5,000+ for end-to-end work on an essay. If we collaborate by providing some assistance in a non-editor capacity (e.g., we do the design), we will lower the compensation accordingly. <a class="return" href="#annotation1return">↩</a>
+    </div>
+    <div class="item"><a style="border: none;" name="annotation2">2.</a> Reading this reinforced to us how important it is for us to send a timely response. We have a policy to send an acknowledgement email ASAP after receiving a pitch, and we have a standing meeting at midday EST on Monday to review each one. Our goal is to respond within a week with more detailed feedback. <a class="return" href="#annotation2return">↩</a>
+    </div>
+    <div class="item"><a style="border: none;" name="annotation3">3.</a> We respond to every pitch email with feedback, even if we decline to pursue it. <a class="return" href="#annotation3return">↩</a>
+    </div>
+    <div class="item"><a style="border: none;" name="annotation4">4.</a> The time from conception to completion varies from contributor to contributor. Many of the people we collaborate with are working full-time elsewhere and have limited time per week to spend on a story. At that rate, projects often take several months to complete. If a contributor has more time available per week to contribute, we do our best to help move stories along at a faster pace. <a class="return" href="#annotation4return">↩</a>
+    </div>
+    <div class="item"><a style="border: none;" name="annotation5">5.</a> We collaborate with people of all skill sets and skill levels. We assign an editor to every freelance pitch we take on, so there's always someone to bounce ideas off of and problem solve with you. <a class="return" href="#annotation5return">↩</a>
+    </div>
+  </div>
 </div>

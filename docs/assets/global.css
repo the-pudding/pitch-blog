@@ -11,6 +11,36 @@
   line-height: 1.3;
 }
 
+.footnotes {
+  border-top: 1px solid rgba(0,0,0,.5);
+  padding-top: 2rem;
+}
+
+.footnotes .item {
+  font-family: 'Lyon Text Web';
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.return {
+  font-size: .8em;
+}
+
+.footnote {
+  vertical-align: super;
+  font-size: 0.6em;
+}
+
+.footnote a {
+  color: #bd3b32;
+  border-color: #bd3b32;
+}
+
+.footnote a:visited {
+  color: #bd3b32;
+  border-color: #bd3b32;
+}
+
 @media (max-width: 800px) {
   .footer-recirc__articles {
     display: block;
