@@ -136,6 +136,8 @@
 	<p>by <a target="_blank" href="https://pudding.cool/author/erin-davis/">Erin Davis</a></p>
 </div>
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Curl up with a good book and you&#39;re likely to read about women with &quot;soft lips&quot; and men with &quot;broad shoulders.&quot; Women often are reduced to their sexuality—men to their strength. We examined 2K books to see how authors describe men&#39;s/women&#39;s physical traits <a href="https://t.co/D8ENhf7ESI">https://t.co/D8ENhf7ESI</a> <a href="https://t.co/3evlTo6JMV">pic.twitter.com/3evlTo6JMV</a></p>&mdash; The Pudding (@puddingviz) <a href="https://twitter.com/puddingviz/status/1283782162622414849?ref_src=twsrc%5Etfw">July 16, 2020</a></blockquote>
+
 <div class="intro">
   {#each doc.intro as intro}
     <p class='prose'>{@html intro.value}</p>
@@ -146,6 +148,8 @@
     {/each}
   </ul>
   <div class="footnotes">
+    <!-- <div class="item"><a style="border: none;" name="annotation1">Notes from The Pudding team:
+    </div>
     <div class="item"><a style="border: none;" name="annotation1">1.</a> We pay $5,000+ for end-to-end work on an essay. If we collaborate by providing some assistance in a non-editor capacity (e.g., we do the design), we will lower the compensation accordingly. <a class="return" href="#annotation1return">↩</a>
     </div>
     <div class="item"><a style="border: none;" name="annotation2">2.</a> Reading this reinforced to us how important it is for us to send a timely response. We have a policy to send an acknowledgement email ASAP after receiving a pitch, and we have a standing meeting at midday EST on Monday to review each one. Our goal is to respond within a week with more detailed feedback. <a class="return" href="#annotation2return">↩</a>
@@ -155,6 +159,8 @@
     <div class="item"><a style="border: none;" name="annotation4">4.</a> The time from conception to completion varies from contributor to contributor. Many of the people we collaborate with are working full-time elsewhere and have limited time per week to spend on a story. At that rate, projects often take several months to complete. If a contributor has more time available per week to contribute, we do our best to help move stories along at a faster pace. <a class="return" href="#annotation4return">↩</a>
     </div>
     <div class="item"><a style="border: none;" name="annotation5">5.</a> We collaborate with people of all skill sets and skill levels. We assign an editor to every freelance pitch we take on, so there's always someone to bounce ideas off of and problem solve with you. <a class="return" href="#annotation5return">↩</a>
+    </div> -->
+    <div class="item"><a style="border: none;" name="annotation5">See The Pudding&rsquo;s <a href="https://pudding.cool/about/#pitch">full pitch guidelines</a> for more info including what to send, how the team collaborates, and compensation details.
     </div>
   </div>
 </div>

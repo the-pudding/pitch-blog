@@ -24,11 +24,13 @@
 
 .return {
   font-size: .8em;
+  display: none;
 }
 
 .footnote {
   vertical-align: super;
   font-size: 0.6em;
+  display: none;
 }
 
 .footnote a {
