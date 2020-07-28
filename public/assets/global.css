@@ -16,6 +16,12 @@
   padding-top: 2rem;
 }
 
+.tweet-wrapper {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  max-width: 95%;
+}
+
 .footnotes .item {
   font-family: 'Lyon Text Web';
   margin-bottom: 1.5rem;

@@ -139,10 +139,10 @@
 
 <div class="intro">
   <p class="prose">I’m published! In the Pudding! Check it out <a href=https://pudding.cool/2020/07/gendered-descriptions/ >here</a>!</p>
-
-  <blockquote class="twitter-tweet">
-  <p lang="en" dir="ltr">Curl up with a good book and you&#39;re likely to read about women with &quot;soft lips&quot; and men with &quot;broad shoulders.&quot; Women often are reduced to their sexuality—men to their strength. We examined 2K books to see how authors describe men&#39;s/women&#39;s physical traits <a href="https://t.co/D8ENhf7ESI">https://t.co/D8ENhf7ESI</a> <a href="https://t.co/3evlTo6JMV">pic.twitter.com/3evlTo6JMV</a></p>&mdash; The Pudding (@puddingviz) <a href="https://twitter.com/puddingviz/status/1283782162622414849?ref_src=twsrc%5Etfw">July 16, 2020</a></blockquote>
-
+  <div class="tweet-wrapper">
+    <blockquote class="twitter-tweet">
+    <p lang="en" dir="ltr">Curl up with a good book and you&#39;re likely to read about women with &quot;soft lips&quot; and men with &quot;broad shoulders.&quot; Women often are reduced to their sexuality—men to their strength. We examined 2K books to see how authors describe men&#39;s/women&#39;s physical traits <a href="https://t.co/D8ENhf7ESI">https://t.co/D8ENhf7ESI</a> <a href="https://t.co/3evlTo6JMV">pic.twitter.com/3evlTo6JMV</a></p>&mdash; The Pudding (@puddingviz) <a href="https://twitter.com/puddingviz/status/1283782162622414849?ref_src=twsrc%5Etfw">July 16, 2020</a></blockquote>
+  </div>
   {#each doc.intro as intro}
     <p class='prose'>{@html intro.value}</p>
   {/each}
