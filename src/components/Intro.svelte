@@ -12,8 +12,8 @@
 
   @font-face {
 		font-family: 'Lyon Text Web';
-		src: url('./assets/fonts/lyon/LyonText-Regular-Web.woff2') format('woff2'),
-		url('./assets/fonts/lyon/LyonText-Regular-Web.woff') format('woff');
+		src: url('./../assets/fonts/lyon/LyonText-Regular-Web.woff2') format('woff2'),
+		url('./../assets/fonts/lyon/LyonText-Regular-Web.woff') format('woff');
 		font-weight: 300;
 		font-style: normal;
 		font-stretch: normal;

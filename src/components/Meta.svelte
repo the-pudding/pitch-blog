@@ -23,7 +23,7 @@
 
 <link rel="canonical" href="https://pudding.cool/2020/07/pitching-gendered-descriptions" />
 
-<link rel='preload' type='font/woff2' as='font' crossorigin href='./assets/fonts/lyon/LyonText-Regular-Web.woff2'>
+<link rel='preload' type='font/woff2' as='font' crossorigin href='./../assets/fonts/lyon/LyonText-Regular-Web.woff2'>
 <link rel='preload' type='font/woff2' as='font' crossorigin href='assets/fonts/lyon/LyonDisplay-Regular-Web.woff2'>
 
 <link
