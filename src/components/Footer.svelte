@@ -116,6 +116,7 @@
     <form action="https://poly-graph.us11.list-manage.com/subscribe/post" method="POST">
         <input type="hidden" name="u" value="c70d3c0e372cde433143ffeab">
         <input type="hidden" name="id" value="9af100ac0f">
+        <label style="position:absolute; opacity:0;" for="MERGE0">Email</label>
         <input label="email" class="newsletter__input" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="you@example.com">
         <div class="hidden-from-view" style="left:-10000px;position:absolute">
           <input label="text" type="text" name="b_c70d3c0e372cde433143ffeab_9af100ac0f" tabindex="-1" value="">
@@ -140,7 +141,7 @@
 
 	<div class='footer-company'>
 		<div class='footer-company__about'>
-			<p class='footer-company__description'><a target="_blank" href='https://pudding.cool'>The Pudding</a> is a digital publication that explains ideas debated in culture with visual essays. Learn more about us <a href="/about">here</a>.</p>
+			<p class='footer-company__description'><a target="_blank" href='https://pudding.cool'>The Pudding</a> is a digital publication that explains ideas debated in culture with visual essays. Learn more <a href="/about">about us here</a>.</p>
 			<p class='footer-company__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great Barrington, MA. <a target="_blank" href='https://pudding.cool/privacy/'>Our privacy policy.</a></p>
 		</div>
 

@@ -103,14 +103,26 @@
         return null;
       }
       return "_blank";
-    });
-  });
+    })
+
+    d3.selectAll("img").attr("alt",function(d){
+        let alt = d3.select(this).attr("alt");
+        if(alt){
+          let altNew = alt.replace(/-/g, " ");
+          console.log(altNew);
+          return altNew
+
+        }
+        return null;
+      });
+  })
+
+  ;
 
 </script>
 
-<p class="logo-wrapper">A project from the <a target="_blank" class="text-underline" href="/">The Pudding</a></p>
+<p class="logo-wrapper">Behind the scenes with <a target="_blank" class="text-underline" href="/">The Pudding</a></p>
 
-<h3>{doc.hed}</h3>
 <h1>{doc.dek}</h1>
 <div class="byline">
 	<p>by <a target="_blank" href="https://pudding.cool/author/erin-davis/">Erin Davis</a></p>
@@ -118,7 +130,7 @@
 
 
 <div class="intro">
-  <p class="prose">I’m published! In the Pudding! Check it out <a href=https://pudding.cool/2020/07/gendered-descriptions/ >here</a>!</p>
+  <p class="prose">I’m published! In The Pudding! Check <a href=https://pudding.cool/2020/07/gendered-descriptions/ >the project out on The Pudding here</a>!</p>
   <div class="tweet-wrapper">
     <blockquote class="twitter-tweet">
     <p lang="en" dir="ltr">Curl up with a good book and you&#39;re likely to read about women with &quot;soft lips&quot; and men with &quot;broad shoulders.&quot; Women often are reduced to their sexuality—men to their strength. We examined 2K books to see how authors describe men&#39;s/women&#39;s physical traits <a href="https://t.co/D8ENhf7ESI">https://t.co/D8ENhf7ESI</a> <a href="https://t.co/3evlTo6JMV">pic.twitter.com/3evlTo6JMV</a></p>&mdash; The Pudding (@puddingviz) <a href="https://twitter.com/puddingviz/status/1283782162622414849?ref_src=twsrc%5Etfw">July 16, 2020</a></blockquote>
