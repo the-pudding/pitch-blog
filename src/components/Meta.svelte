@@ -4,7 +4,7 @@
 
 <meta property="og:title" content="The Courage (and Disappointment) of Pitching a Visual Essay" />
 <meta property="og:site_name" content="The Pudding" />
-<meta property="og:url" content="https://pudding.cool" />
+<meta property="og:url" content="https://pudding.cool/2020/07/pitching-gendered-descriptions" />
 <meta property="og:description" content="How I successfully pitched my first visual essay" />
 <meta property="og:type" content="article" />
 <meta property="og:locale" content="en_US" />
